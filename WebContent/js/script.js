@@ -1,4 +1,17 @@
-$(document).ready(function(){ 
+$(document).ready(function(){
+    
+    $.datepicker.setDefaults({
+        dateFormat: "dd-mm-yy",
+        regional: "fr",
+        dayNames: [ "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi" ],
+        dayNamesShort: [ "Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam" ],
+        dayNamesMin: [ "Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa" ],
+        monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembere" ],
+        monthNamesShort: [ "Jan", "Fev", "Mar", "Avr", "Mai", "Jun", "Jui", "Aou", "Sep", "Oct", "Nov", "Dec" ]
+    });
+    
+    /*$("input[type='radio']").checkboxradio();*/
+
 
     $("#legendcliquable").click(function() {
          $("#tableauacacher").slideToggle();
@@ -21,3 +34,4 @@ $(document).ready(function(){
     
     $("#datedenaissance").datepicker();
 });
+
