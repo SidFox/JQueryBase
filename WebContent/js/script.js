@@ -5,11 +5,9 @@ $(document).ready(function(){
     });
     
     $(".circle").click(function() {
-
-            $(this).effect( "bounce", "slow" );
-                    var couleur = $(this).css("background-color");
-                    $("#paiement").css("background-color",couleur);
-
+            $(this).effect("bounce","slow");
+            var couleur = $(this).css("background-color");
+            $("#paiement").css("background-color",couleur);
     });
     
     $("#reinitialiser").click(function() {
@@ -20,4 +18,6 @@ $(document).ready(function(){
         $("#nom_porteur").val($(this).val());
 
     });
+    
+    $("#datedenaissance").datepicker();
 });

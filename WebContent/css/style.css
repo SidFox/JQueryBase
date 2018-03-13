@@ -92,15 +92,15 @@ form#paiement fieldset fieldset label {
 	}
 		
 form#paiement label[for=visa] {
-	background-image: url(../img/visa.gif);
+	background-image: url(../images/visa.gif);
 }
 
 form#paiement label[for=amex] {
-	background-image: url(../img/amex.gif);
+	background-image: url(../images/amex.gif);
 }
 
 form#paiement label[for=mastercard] {
-	background-image: url(../img/mastercard.gif);
+	background-image: url(../images/mastercard.gif);
 }
 	
 form#paiement fieldset fieldset label:hover {
