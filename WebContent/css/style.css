@@ -38,11 +38,9 @@ form#paiement fieldset:last-of-type {
 }
 	
 form#paiement legend {
-	color: #384313;
 	font-size: 16px;
 	font-weight: bold;
 	padding-bottom: 10px;
-	text-shadow: 0 1px 1px #c0d576;
 }
 
 form#paiement > fieldset > legend:before {
@@ -133,7 +131,8 @@ form#paiement input[type=radio] {
 	margin-right: 5px;
 }
 			
-form#paiement button {
+form#paiement input[type=submit],
+form#paiement input[type=reset] {
 	background: #384313;
 	border: none;
 	-moz-border-radius: 20px;
@@ -141,16 +140,18 @@ form#paiement button {
 	-khtml-border-radius: 20px;
 	border-radius: 20px;
 	color: #ffffff;
-	display: block;
+	display: inline-block;
 	font: 18px Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 1px;
 	margin: auto;
+	width: auto;
 	padding: 7px 25px;
 	text-shadow: 0 1px 1px #000000;
 	text-transform: uppercase;
 }
 			
-form#paiement button:hover {
+form#paiement input[type=submit]:hover,
+form#paiement input[type=reset]:hover {
 	background: #1e2506;
 	cursor: pointer;
 }
@@ -173,8 +174,55 @@ th{
     color:grey;
 }
 
-.oblg:before{
-    content:'*_';
+.required:after{
+    content:' *';
+}
+
+div.optionnal {
+    position: relative;
+	width:25px;
+	height:25px;
+	background:#e3ebc3;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	-o-border-radius:100px;
+	border-radius:100px;
+    
+    left: 350px;
+    top: -35px;
+}
+
+
+.cliquable:hover {
+    cursor: pointer;
+}
+
+.red {
+    background-color: #bc2c2c;
+}
+
+.blue {
+    background-color: #2c3ebc;
+}
+
+.green {
+    background-color: #9cbc2c
+}
+
+.circles {
+    position: absolute;
+    left: 470px;
+}
+
+.circle {
+    position: relative;
+    display:inline-block;
+	width:25px;
+	height:25px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	-o-border-radius:100px;
+	border-radius:100px;
 }
 
 .en-markup-crop-options {
